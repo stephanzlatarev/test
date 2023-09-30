@@ -12,7 +12,6 @@ export default function() {
   const tail = samples.slice(index + 1, index + 25);
 
   const anchorPrice = sample.close;
-  const anchorVolume = sample.volume;
 
   const minZoom = 0.5;
   const maxZoom = 2.0;
@@ -26,7 +25,7 @@ export default function() {
       ...points(head, "high", anchorPrice, zoom),
       ...points(head, "low", anchorPrice, zoom),
       ...points(head, "close", anchorPrice, zoom),
-      ...points(head, "volume", anchorVolume, zoom),
+      ...empty(head.length), // Remove volume because FXCM doesn't give it
       ...array(72, sample.sun, 360),
       ...array(72, sample.moon, 360),
       ...array(72, sample.phase, 360),
@@ -76,12 +75,18 @@ function parse(index, line) {
   };
 }
 
-function array(size, value, max) {
+function empty(size) {
   const array = [];
 
   for (let i = 0; i < size; i++) {
     array.push(0);
   }
+
+  return array;
+}
+
+function array(size, value, max) {
+  const array = empty(size);
 
   if (max) {
     array[Math.floor(size * value / max)] = 1;
