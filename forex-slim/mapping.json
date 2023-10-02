@@ -1,0 +1,18 @@
+{
+  "label": "forex",
+
+  "when": {
+    "infos": [
+      { "node": "High", "length": 24 },
+      { "node": "Low", "length": 24 },
+      { "node": "Sun-Moon", "length": 72 }
+    ]
+  },
+
+  "then": {
+    "infos": [
+      { "node": "High", "length": 24 },
+      { "node": "Low", "length": 24 }
+    ]
+  }
+}
