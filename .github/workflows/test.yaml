@@ -8,5 +8,3 @@ jobs:
       - uses: addnab/docker-run-action@v3
         with:
           image: stephanzlatarev/starcraft
-          shell: /bin/bash
-          run: echo "test"
