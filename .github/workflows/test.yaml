@@ -8,7 +8,6 @@ jobs:
       - run: uname -a
       - run: uname -p
       - run: uname -m
-      - run: brew install colima
       - run: brew install docker
-      - run: colima start --very-verbose --runtime docker
+      - run: sudo /Applications/Docker.app/Contents/MacOS/Docker --unattended --install-privileged-components
       - run: docker version
