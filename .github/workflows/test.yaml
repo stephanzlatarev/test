@@ -12,8 +12,10 @@ jobs:
       - run: brew install docker
       - run: brew --prefix docker
       - run: which docker
-      - run: ls -l /opt/homebrew/Cellar/docker/27.5.0
-      - run: ls -l /opt/homebrew/Cellar/docker-completion/27.5.0
+      - run: ls -l /opt/homebrew/Cellar/docker/27.5.0/bin
+      - run: ls -l /opt/homebrew/Cellar/docker/27.5.0/share
+      - run: ls -l /opt/homebrew/Cellar/docker-completion/27.5.0/etc
+      - run: ls -l /opt/homebrew/Cellar/docker-completion/27.5.0/share
 
       - run: /opt/homebrew/bin/docker/docker run hello-world
       - run: /opt/homebrew/bin/docker/docker version
