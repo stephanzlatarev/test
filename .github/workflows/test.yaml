@@ -5,6 +5,7 @@ jobs:
     runs-on: macos-14
     steps:
 
-      - uses: addnab/docker-run-action@v3
-        with:
-          image: stephanzlatarev/starcraft
+      - run: |
+          pwd
+          ls -l
+          docker version
