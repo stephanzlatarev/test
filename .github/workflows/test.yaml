@@ -9,4 +9,5 @@ jobs:
       - run: uname -p
       - run: uname -m
       - run: brew install docker
+      - run: dockerd
       - run: docker version
