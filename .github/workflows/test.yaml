@@ -12,8 +12,9 @@ jobs:
       - run: brew install docker
       - run: brew --prefix docker
       - run: which docker
-      - run: ls -l /opt/homebrew/opt/docker
-      - run: ls -l /opt/homebrew/bin/docker
+      - run: ls -l /opt/homebrew/Cellar
+      - run: ls -l /opt/homebrew/opt/Cellar
+      - run: ls -l /opt/homebrew/bin/Cellar
 
       - run: /opt/homebrew/bin/docker/docker run hello-world
       - run: /opt/homebrew/bin/docker/docker version
