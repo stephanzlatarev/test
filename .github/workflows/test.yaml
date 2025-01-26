@@ -16,12 +16,5 @@ jobs:
           sudo cp docker/docker /usr/local/bin/
           ls -l docker
 
-      - name: Start Docker Daemon
-        run: |
-          sudo ./docker/dockerd &
-
-      - name: Verify Docker
-        run: |
-          ./docker/docker run hello-world
-
+      - run: ./docker/docker run hello-world
       - run: ./docker/docker version
