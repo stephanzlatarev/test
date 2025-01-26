@@ -12,11 +12,8 @@ jobs:
       - run: brew install docker
       - run: brew --prefix docker
       - run: which docker
-      - run: ls -l /usr/local/bin
-      - run: ls -l /usr/local/opt
-      - run: ls -l /Applications
-      - run: ls -l /Volumes
-      - run: ls -l /Volumes/Docker/Docker.app/Contents/MacOS
+      - run: ls -l /opt/homebrew/opt
+      - run: ls -l /opt/homebrew/bin
         
       - name: Download Docker
         run: |
