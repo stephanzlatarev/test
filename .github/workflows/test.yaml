@@ -10,6 +10,5 @@ jobs:
       - run: uname -m
       - run: brew install colima
       - run: brew install docker
-      - run: colima start --runtime docker
-      - run: dockerd
+      - run: colima start --very-verbose --runtime docker
       - run: docker version
