@@ -8,6 +8,8 @@ jobs:
       - run: uname -a
       - run: uname -p
       - run: uname -m
+      - run: brew install colima
       - run: brew install docker
+      - run: colima start --runtime docker
       - run: dockerd
       - run: docker version
