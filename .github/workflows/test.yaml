@@ -5,7 +5,8 @@ jobs:
     runs-on: macos-14
     steps:
 
-      - run: |
-          pwd
-          ls -l
-          docker version
+      - run: uname -a
+      - run: uname -p
+      - run: uname -m
+      - run: brew install docker
+      - run: docker version
