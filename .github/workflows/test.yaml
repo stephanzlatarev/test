@@ -13,7 +13,8 @@ jobs:
         run: |
           curl -L -o docker.tgz https://download.docker.com/mac/static/stable/aarch64/docker-20.10.8.tgz
           tar xzvf docker.tgz
-          sudo cp docker/* /usr/local/bin/
+          sudo cp docker/docker /usr/local/bin/
+          sudo cp docker/cli-plugins/docker-* /usr/local/bin/
           rm -rf docker docker.tgz
 
       - name: Start Docker Daemon
