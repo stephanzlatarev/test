@@ -14,15 +14,14 @@ jobs:
           curl -L -o docker.tgz https://download.docker.com/mac/static/stable/aarch64/docker-20.10.8.tgz
           tar xzvf docker.tgz
           sudo cp docker/docker /usr/local/bin/
-          sudo cp docker/cli-plugins/docker-* /usr/local/bin/
-          rm -rf docker docker.tgz
+          ls -l docker
 
       - name: Start Docker Daemon
         run: |
-          sudo /usr/local/bin/dockerd &
+          sudo ./docker/dockerd &
 
       - name: Verify Docker
         run: |
-          /usr/local/bin/docker run hello-world
+          ./docker/docker run hello-world
 
-      - run: docker version
+      - run: ./docker/docker version
