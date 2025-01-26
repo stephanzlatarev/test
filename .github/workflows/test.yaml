@@ -9,6 +9,11 @@ jobs:
       - run: uname -p
       - run: uname -m
 
+      - run: brew install docker
+      - run: ls -l /Applications
+      - run: ls -l /Volumes
+      - run: ls -l /Volumes/Docker/Docker.app/Contents/MacOS
+        
       - name: Download Docker
         run: |
           curl -L -o docker.tgz https://download.docker.com/mac/static/stable/aarch64/docker-20.10.8.tgz
