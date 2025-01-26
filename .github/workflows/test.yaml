@@ -8,6 +8,20 @@ jobs:
       - run: uname -a
       - run: uname -p
       - run: uname -m
-      - run: brew install docker
-      - run: sudo /Applications/Docker.app/Contents/MacOS/Docker --unattended --install-privileged-components
+
+      - name: Download Docker
+        run: |
+          curl -L -o docker.tgz https://download.docker.com/mac/static/stable/aarch64/docker-20.10.8.tgz
+          tar xzvf docker.tgz
+          sudo cp docker/* /usr/local/bin/
+          rm -rf docker docker.tgz
+
+      - name: Start Docker Daemon
+        run: |
+          sudo /usr/local/bin/dockerd &
+
+      - name: Verify Docker
+        run: |
+          /usr/local/bin/docker run hello-world
+
       - run: docker version
