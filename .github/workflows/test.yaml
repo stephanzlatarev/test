@@ -10,6 +10,10 @@ jobs:
       - run: uname -m
 
       - run: brew install docker
+      - run: brew --prefix docker
+      - run: which docker
+      - run: ls -l /usr/local/bin
+      - run: ls -l /usr/local/opt
       - run: ls -l /Applications
       - run: ls -l /Volumes
       - run: ls -l /Volumes/Docker/Docker.app/Contents/MacOS
