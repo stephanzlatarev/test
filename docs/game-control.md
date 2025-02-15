@@ -15,7 +15,7 @@ Some controls are available only when watching a replay or when playing a game.
 The following controls are available when watching a replay or when playing a game:
 
 * Change the speed from `FAST SPEED`, to `CLOCK TIME`, to `X2 SLOWER`, to `X4 SLOWER`, to `X16 SLOWER`, and back to `FAST SPEED`
-* Pause and resume
+* Pause and resume. You can use the buttons under `GAME CONTROLS` or `Spacebar` key when the focus is on the camera view
 * While paused, move one frame back or forth. This is limited to 10 seconds before the time the game was paused.
 
 # Replay controls
