@@ -19,7 +19,7 @@ The following debug commands are supported at the moment:
 * Debug draw lines will show lines on camera and minimap
 * Debug draw spheres will show circles on camera and minimap
 * Debug draw text
-    * with virual position - `virtualPos` - will show in the `Debug` terminal. The x coordinate will be used to split debug info into tabs in the future
+    * with virtual position - `virtualPos` - will show in the `Debug` terminal. The x coordinate will be used to split debug info into tabs in the future
     * without virtual or world position - will be interpreted as a shape, e.g.:
         * `{ shape: "circle", x: <x coordinate of center>, y: <y coordinate of center>, r: <radius>, color: <color> }`
         * `{ shape: "line", x1: <start x>, y1: <start y>, x2: <end x>, y2: <end y>, width: <line width>, color: <color> }`
