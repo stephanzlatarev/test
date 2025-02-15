@@ -11,6 +11,7 @@ has_toc: false
 StarCraft II for AI requires:
 * Visual Studio Code - [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
 * Docker - [Install Docker](https://docs.docker.com/get-started/get-docker/) and start it
+* StarCraft II - A headless game client is downloaded by StarCraft II for AI before watching a replay or starting a game. If, at that point, step "Download StarCraft II" fails you can download the game client manually using `docker pull stephanzlatarev/starcraft` in a command prompt
 
 # Install StarCraft II for AI in Visual Studio Code
 
