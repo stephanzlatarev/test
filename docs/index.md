@@ -12,7 +12,7 @@ Run your AI bots with StarCraft II within Visual Studio Code.
 
 ## Features
 
-Visualizes StarCraft II games and replays directly in you IDE.
+Visualizes StarCraft II games and replays directly in your IDE.
 You don't need an installation of the game on your machine.
 You can improve the code of your bot and troubleshoot it without leaving Visual Studio Code.
 
