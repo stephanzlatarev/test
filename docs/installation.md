@@ -17,6 +17,7 @@ StarCraft II for AI requires:
 
 StarCraft II for AI is an extension to Visual Studio Code.
 You can install it from the marketplace.
+![Install extension](install-extension.gif)
 
 The extension is also available for download in
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=stephanzlatarev.vscode-starcraft),
