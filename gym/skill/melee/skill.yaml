@@ -61,4 +61,6 @@ act:
       - name: targety
 
 playbooks:
-  focus-fire: playbook-attack.js
+  priority-attack: playbook-priority-attack.js
+  focus-fire: playbook-focus-fire.js
+  kite-back: playbook-kite-back.js
