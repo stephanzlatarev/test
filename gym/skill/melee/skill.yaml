@@ -68,7 +68,7 @@ playbooks:
 display:
   enemies:
     shape: circle
-    color: green
+    color: red
     attributes:
       - name: posx
         type: x-axis
