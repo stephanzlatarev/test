@@ -66,8 +66,20 @@ playbooks:
   kite-back: playbook-kite-back.js
 
 display:
+  enemies:
+    shape: circle
+    color: green
+    attributes:
+      - name: posx
+        type: x-axis
+      - name: posy
+        type: y-axis
+      - name: type
+        type: icon
+        href: https://robobays.github.io/images/unit/${type}.webp
   warriors:
     shape: circle
+    color: green
     attributes:
       - name: posx
         type: x-axis
