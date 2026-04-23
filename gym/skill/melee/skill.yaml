@@ -64,3 +64,15 @@ playbooks:
   priority-attack: playbook-priority-attack.js
   focus-fire: playbook-focus-fire.js
   kite-back: playbook-kite-back.js
+
+display:
+  warriors:
+    shape: circle
+    attributes:
+      - name: posx
+        type: x-axis
+      - name: posy
+        type: y-axis
+      - name: type
+        type: icon
+        href: https://robobays.github.io/images/unit/${type}.webp

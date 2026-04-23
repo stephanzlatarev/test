@@ -42,3 +42,14 @@ playbooks:
   force: playbook-force.js
   block: playbook-block.js
   win: playbook-win.js
+
+display:
+  marks:
+    shape: square
+    attributes:
+      - name: row
+        type: y-axis
+      - name: col
+        type: x-axis
+      - name: player
+        type: icon
