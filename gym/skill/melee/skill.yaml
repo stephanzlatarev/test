@@ -68,23 +68,16 @@ playbooks:
 display:
   enemies:
     shape: circle
+    x: posx
+    y: posy
     color: red
-    attributes:
-      - name: posx
-        type: x-axis
-      - name: posy
-        type: y-axis
-      - name: type
-        type: icon
-        href: https://robobays.github.io/images/unit/${type}.webp
+    icon: https://robobays.github.io/images/unit/${type}.webp
   warriors:
     shape: circle
+    x: posx
+    y: posy
     color: green
-    attributes:
-      - name: posx
-        type: x-axis
-      - name: posy
-        type: y-axis
-      - name: type
-        type: icon
-        href: https://robobays.github.io/images/unit/${type}.webp
+    icon: https://robobays.github.io/images/unit/${type}.webp
+    arrows:
+      - x: targetx
+        y: targety
