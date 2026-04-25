@@ -6,7 +6,7 @@ export default function() {
 
   return {
     observe: {
-      actors: [ [actor.x, actor.y] ],
+      actors: [ [actor.x, actor.y, 0, 0] ],
       targets: targets.map(target => [target.x, target.y]),
     },
     act: {
