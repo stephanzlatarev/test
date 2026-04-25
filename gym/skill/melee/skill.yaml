@@ -74,7 +74,7 @@ display:
     icon: https://robobays.github.io/images/unit/${type}.webp
     trims:
       - shape: circle
-        border: blue
+        border: red
         radius: range
   warriors:
     shape: circle
@@ -85,8 +85,8 @@ display:
     icon: https://robobays.github.io/images/unit/${type}.webp
     trims:
       - shape: arrow
-        x: targetx
-        y: targety
+        headx: targetx
+        heady: targety
       - shape: circle
-        border: blue
+        border: green
         radius: range
