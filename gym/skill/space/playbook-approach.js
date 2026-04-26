@@ -1,16 +1,24 @@
 
 export default function() {
   const actor = getRandomPosition();
-  const targets = [getRandomPosition(), getRandomPosition()];
-  const target = findClosesTarget(actor, targets);
+
+  let a = getRandomPosition();
+  let b = getRandomPosition();
+
+  const ad = distance(actor, a);
+  while (Math.abs(distance(actor, b) - ad) < 4) {
+    b = getRandomPosition();
+  }
+
+  const c = (ad < distance(actor, b)) ? a : b;
 
   return {
     observe: {
       actors: [ [actor.x, actor.y, 0, 0] ],
-      targets: targets.map(target => [target.x, target.y]),
+      targets: [ [a.x, a.y], [b.x, b.y] ],
     },
     act: {
-      actors: [ [target.x, target.y] ],
+      actors: [ [c.x, c.y] ],
     }
   };
 }
@@ -22,18 +30,6 @@ function getRandomPosition() {
   };
 }
 
-function findClosesTarget(actor, targets) {
-  let closestDistance = Infinity;
-  let closestTarget = null;
-
-  for (const target of targets) {
-    const squareDistance = ((actor.x - target.x) * (actor.x - target.x) + (actor.y - target.y) * (actor.y - target.y));
-
-    if (squareDistance < closestDistance) {
-      closestDistance = squareDistance;
-      closestTarget = target;
-    }
-  }
-
-  return closestTarget;
+function distance(a, b) {
+  return ((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
 }

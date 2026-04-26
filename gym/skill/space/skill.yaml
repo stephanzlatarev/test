@@ -35,7 +35,7 @@ act:
 playbooks:
   # The playbook teaches that 1 actor should approach the closest of 2 targets
   # Check if this is sufficient to learn that multiple actors should approach the closest of many targets
-  priority-approach: playbook-approach.js
+  approach: playbook-approach.js
 
 display:
   actors:
